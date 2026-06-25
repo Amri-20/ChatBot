@@ -71,41 +71,48 @@
 ```mermaid
 flowchart TD
 
-A[User Query]
+    A([User Query])
+    B[LangGraph Chat Node]
+    C{Need Tool?}
 
-A --> B[LangGraph Chat Node]
+    D[LLM Generates Response]
+    E[ToolNode]
 
-B --> C{Need Tool?}
+    F[Calculator]
+    G[DuckDuckGo Search]
+    H[Stock Price Tool]
+    I[RAG Tool]
 
-C -- No --> D[LLM Response]
+    J[FAISS Retriever]
+    K[PDF Chunks]
 
-C -- Yes --> E[ToolNode]
+    L[LLM Generates Final Answer]
+    M[Streamlit UI]
+    N[(SQLite Checkpointer)]
 
-E --> F[Calculator]
+    A --> B
+    B --> C
 
-E --> G[DuckDuckGo Search]
+    C -- No --> D
+    D --> M
 
-E --> H[Stock Price Tool]
+    C -- Yes --> E
 
-E --> I[RAG Tool]
+    E --> F
+    E --> G
+    E --> H
+    E --> I
 
-I --> J[FAISS Retriever]
+    I --> J
+    J --> K
+    K --> L
 
-J --> K[PDF Chunks]
+    F --> L
+    G --> L
+    H --> L
 
-F --> L
-
-G --> L
-
-H --> L
-
-I --> L
-
-L[LLM Generates Final Answer]
-
-L --> M[Streamlit UI]
-
-M --> N[SQLite Checkpointer Saves Conversation]
+    L --> M
+    M --> N
 ```
 
 ---
