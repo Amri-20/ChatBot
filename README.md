@@ -46,22 +46,22 @@
              │                         ▼
              │                 ToolNode (LangGraph)
              │                         │
-             │      ┌──────────┬──────────┬────────────┐
-             │      │          │          │            │
-             ▼      ▼          ▼          ▼            ▼
+             │           ┌──────────┬──────────┬────────────┐
+             │           │          │          │            │
+             ▼           ▼          ▼          ▼            ▼
         Direct Reply  Calculator  Web Search  Stock API  RAG Tool
-                                                     │
-                                                     ▼
-                                          Thread-specific Retriever
-                                                     │
-                                                     ▼
-                                              FAISS Vector Store
-                                                     │
-                                                     ▼
-                                        PDF Loader + Text Splitter
-                                                     │
-                                                     ▼
-                                              Uploaded PDF
+                                                            │
+                                                            ▼
+                                                Thread-specific Retriever
+                                                            │
+                                                            ▼
+                                                      FAISS Vector Store
+                                                            │
+                                                            ▼
+                                                PDF Loader + Text Splitter
+                                                            │
+                                                            ▼
+                                                      Uploaded PDF
 ```
 
 ---
