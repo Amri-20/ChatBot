@@ -142,12 +142,18 @@ flowchart TD
 
 ```
 .
+├── Images/
+│   ├── Home.png
+│   ├── Pdf_chat.png
+│   ├── Web_search.png
+│   ├── Stock_tool.png
+│   └── Calculator.png
 ├── chatbot_rag_backend.py
 ├── chatbot_rag_frontend.py
 ├── chatbot.db
 ├── requirements.txt
 ├── .env
-├── README.md
+└── README.md
 ```
 
 ---
@@ -157,9 +163,9 @@ flowchart TD
 ## Clone Repository
 
 ```bash
-git clone https://github.com/yourusername/chatbot-rag.git
+git clone https://github.com/Amri-20/ChatBot.git
 
-cd chatbot-rag
+cd ChatBot
 ```
 
 ---
@@ -331,16 +337,39 @@ which enables
 
 # 📸 Screenshots
 
-Add screenshots here
 
-```
-images/
-├── home.png
-├── pdf_chat.png
-├── web_search.png
-├── stock_tool.png
-├── calculator.png
-```
+### 🏠 Home
+The chatbot home interface with PDF upload support and conversation history.
+
+![Home](Images/Home.png)
+
+---
+
+### 📄 PDF Chat (RAG)
+Upload a PDF and ask questions or generate summaries using Retrieval-Augmented Generation (RAG).
+
+![PDF Chat](Images/Pdf_chat.png)
+
+---
+
+### 🌐 Web Search
+Retrieve the latest information from the web using the integrated DuckDuckGo search tool.
+
+![Web Search](Images/Web_search.png)
+
+---
+
+### 📈 Stock Price Tool
+Get real-time stock prices and market information for publicly traded companies.
+
+![Stock Tool](Images/Stock_tool.png)
+
+---
+
+### 🧮 Calculator Tool
+Perform mathematical calculations directly through natural language.
+
+![Calculator](Images/Calculator.png)
 
 ---
 
